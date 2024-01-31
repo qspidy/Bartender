@@ -12,6 +12,13 @@ This is a chatbot for Rocket.Chat that uses OpenAI endpoints to respond to user 
 6. If you want to use a different location for the config.yaml file, set the BARTENDER_CONFIG environmental variable to the full path of the file (e.g. BARTENDER_CONFIG=/etc/bartender/config.yaml).
 7. Start the bot by running the binary file. If everything is set up correctly, the bot's status in Rocket.Chat should change to "available" and it will be ready to respond to user input in the specified channels. (This might not work on 5.x and 6.x, see known issues)
 
+## Build
+
+```bash
+git clone https://github.com/qspidy/Bartender
+cd Bartender
+go biuld
+```
 
 #### Known issues
  - The bot is always shown as offline on RocketChat 5.x and 6.x even when it successfully connects (Rocket.Chat bug?)
